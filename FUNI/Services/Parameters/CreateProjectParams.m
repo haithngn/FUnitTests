@@ -3,10 +3,10 @@
 // Copyright (c) 2018 Floware. All rights reserved.
 //
 
-#import "Project.h"
+#import "CreateProjectParams.h"
 
 
-@implementation Project {
+@implementation CreateProjectParams {
 
 }
 

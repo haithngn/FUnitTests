@@ -4,14 +4,37 @@
 //
 
 #import "ProjectRepositoryImpl.h"
+#import "DBProjectRepository.h"
+#import "CreateProjectParams.h"
 
+@interface ProjectRepositoryImpl ()
+
+@property (nonatomic, strong) NSObject <DBProjectRepository> * repository;
+
+@end
 
 @implementation ProjectRepositoryImpl {
 
 }
 
-- (void)createDefaultProjectsBelongTo:(NSString *)username {
+- (instancetype)initWithRepository:(NSObject <DBProjectRepository> *)repository {
+    self = [super init];
+    if (self) {
+        self.repository = repository;
+    }
 
+    return self;
+}
+
+- (void)createDefaultProjectsBelongTo:(NSString *)username {
+    NSMutableArray <CreateProjectParams*> * params = [NSMutableArray new];
+
+    for (int i = 0; i < 5; ++i) {
+        NSString * projId = [NSString stringWithFormat:@"%@_%d", username, i];
+        [params addObject:[[CreateProjectParams alloc] initWithId:projId andName:projId]];
+    }
+
+    [_repository createProjects:params];
 }
 
 @end

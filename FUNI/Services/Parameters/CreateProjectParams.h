@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Project : NSObject
+@interface CreateProjectParams : NSObject
 
 @property (nonatomic, strong) NSString * projectId;
 @property (nonatomic, strong) NSString * projectName;

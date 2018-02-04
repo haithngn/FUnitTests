@@ -18,6 +18,7 @@
 #import "ProjectRepositoryImpl.h"
 #import "ProjectServiceImpl.h"
 #import "Configurations.h"
+#import "DBProjectRepositoryImpl.h"
 
 @interface Dependences ()
 
@@ -32,6 +33,8 @@
 @property (nonatomic, strong) NSObject<ProjectRepository> * internalProjectRepository;
 @property (nonatomic, strong) NSObject<ProjectService> * internalProjectService;
 
+@property (nonatomic, strong) NSObject<DBProjectRepository> * internalDBProjectRepository;
+
 @end
 
 @implementation Dependences {
@@ -44,6 +47,7 @@
     NSObject <SettingService> *_internalSettingService;
     NSObject <ProjectRepository> *_internalProjectRepository;
     NSObject <ProjectService> *_internalProjectService;
+    NSObject <DBProjectRepository> *_internalDBProjectRepository;
 }
 
 @synthesize internalUserService = _internalUserService;
@@ -54,6 +58,7 @@
 @synthesize internalSettingService = _internalSettingService;
 @synthesize internalProjectRepository = _internalProjectRepository;
 @synthesize internalProjectService = _internalProjectService;
+@synthesize internalDBProjectRepository = _internalDBProjectRepository;
 
 + (instancetype)instance {
     static Dependences *sharedInstance = nil;
@@ -121,7 +126,7 @@
 
 - (NSObject <ProjectRepository> *)internalProjectRepository {
     if (_internalProjectRepository == nil) {
-        _internalProjectRepository = [[ProjectRepositoryImpl alloc] init];
+        _internalProjectRepository = [[ProjectRepositoryImpl alloc] initWithRepository:self.internalDBProjectRepository];
     }
 
     return _internalProjectRepository;
@@ -133,6 +138,14 @@
     }
 
     return _internalProjectService;
+}
+
+- (NSObject <DBProjectRepository> *)internalDBProjectRepository {
+    if (_internalDBProjectRepository == nil) {
+        _internalDBProjectRepository = [[DBProjectRepositoryImpl alloc] init];
+    }
+
+    return _internalDBProjectRepository;
 }
 
 #pragma mark - Class Methods

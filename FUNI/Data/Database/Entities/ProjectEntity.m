@@ -3,10 +3,10 @@
 // Copyright (c) 2018 Floware. All rights reserved.
 //
 
-#import "Project.h"
+#import "ProjectEntity.h"
 
 
-@implementation Project {
+@implementation ProjectEntity {
 
 }
 
@@ -18,5 +18,6 @@
 
     return self;
 }
+
 
 @end
