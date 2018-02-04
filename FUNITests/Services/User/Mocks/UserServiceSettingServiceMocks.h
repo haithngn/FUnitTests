@@ -8,4 +8,5 @@
 
 
 @interface UserServiceSettingServiceMocks : NSObject <SettingService>
+@property (nonatomic, readonly) BOOL createSetting;
 @end

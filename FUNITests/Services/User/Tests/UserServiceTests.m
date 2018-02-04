@@ -12,6 +12,7 @@
 #import "UserServiceApiMocks.h"
 #import "UserServiceSettingServiceMocks.h"
 #import "UserServiceProjectServiceMocks.h"
+#import "Configurations.h"
 
 @interface UserServiceTests ()
 
@@ -37,12 +38,30 @@
                                                  sessionRepository:_sessionRepoMocks
                                                                api:_apiMocks
                                                     settingService:_settingServiceMocks
-                                                    projectService:_projectServiceMocks];
+                                                    projectService:_projectServiceMocks
+                                                    configurations:[Configurations instance]];
 }
 
 - (void)tearDown {
     [super tearDown];
     NSLog(@"tearDown");
+}
+
+- (void)testCallUserApi {
+    //Given
+    NSString * usr = @"haideptrai";
+    NSString * pwd = @"confirmed";
+    LoginParams * params = [[LoginParams alloc] initWithUsername:usr password:pwd];
+
+    //When
+    [_userService login:params handler:nil];
+
+    //Then
+    NSString * hashPwd = [NSString stringWithFormat:@"%@_%@", pwd, [Configurations instance].secret];
+    NSLog(@"%@", hashPwd);
+    NSLog(@"%@", _apiMocks.pwd);
+    XCTAssertTrue([usr isEqualToString:_apiMocks.usr], @"Dung co doi user name");
+    XCTAssertTrue([hashPwd isEqualToString:_apiMocks.pwd], @"Hash sai password roi em");
 }
 
 - (void)testLogin {
@@ -63,6 +82,27 @@
     [_userService login:params handler:^(NSError *error, User *user) {
         //Then
     }];
+}
+
+- (void)testCreateSetting {
+    //Given
+    LoginParams * params = [[LoginParams alloc] initWithUsername:@"usernamenepa" password:@"tuyetmat"];
+
+    //When
+    [_userService login:params handler:nil];
+
+    XCTAssertTrue(_settingServiceMocks.createSetting, @"You must create setting after sign in");
+}
+
+- (void)testCreateDefaultProject {
+    //Given
+    LoginParams * params = [[LoginParams alloc] initWithUsername:@"usernamenepa" password:@"tuyetmat"];
+
+    //When
+    [_userService login:params handler:nil];
+
+    XCTAssertTrue(_projectServiceMocks.hasDefaultProj, @"You must call create default projs after sign in");
+
 }
 
 - (void)testLogout {

@@ -5,12 +5,26 @@
 
 #import "UserServiceProjectServiceMocks.h"
 
+@interface UserServiceProjectServiceMocks ()
+
+@property (nonatomic, assign) BOOL hasDefaultProj;
+
+@end
 
 @implementation UserServiceProjectServiceMocks {
 
 }
-- (void)createDefaultProjectsBelongTo:(NSString *)username {
 
+- (instancetype)init {
+    if (self = [super init]) {
+        _hasDefaultProj = NO;
+    }
+
+    return self;
+}
+
+- (void)createDefaultProjectsBelongTo:(NSString *)username {
+    _hasDefaultProj = YES;
 }
 
 @end

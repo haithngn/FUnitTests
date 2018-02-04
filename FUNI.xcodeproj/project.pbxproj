@@ -42,6 +42,7 @@
 		1A998C2E09B8EF896C1A8DC4 /* UserServiceProjectServiceMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9989743EC69183E2F0C4E6 /* UserServiceProjectServiceMocks.m */; };
 		1A998DA4B41CC3D96030C961 /* SettingServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998EBCA443AB4720EB1204 /* SettingServiceImpl.m */; };
 		1A998E527A2424D34229785B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998371F98F17FBCD9B52C4 /* Project.m */; };
+		1A998F80AA40A9498ADDE603 /* Configurations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998BC52D218EDE40645540 /* Configurations.m */; };
 		27FA8726202169FE00438F76 /* FUNITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA8725202169FE00438F76 /* FUNITests.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,28 @@
 			remoteInfo = FUNI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B54795282026E14D007BB248 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B547952E2026E163007BB248 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1929001E914DE3A134D89845 /* UserApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserApiImpl.m; sourceTree = "<group>"; };
@@ -106,6 +129,7 @@
 		19290E44EC29A871756ED4DC /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290E9D36C579314CDF28F9 /* LoginParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParams.m; sourceTree = "<group>"; };
 		19290EE3750D02D21B91CE9C /* UserRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepositoryImpl.h; sourceTree = "<group>"; };
+		1A99803D80668F670F7930E0 /* Configurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configurations.h; sourceTree = "<group>"; };
 		1A998088BE97DFF9E18EB515 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 		1A9980A8FAAE21B7A077E243 /* SettingRespository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingRespository.h; sourceTree = "<group>"; };
 		1A9981068A82C041C405B586 /* UserServiceRepoMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceRepoMocks.h; sourceTree = "<group>"; };
@@ -124,6 +148,7 @@
 		1A9988A949AA9710DB3D0F75 /* UserServiceSettingServiceMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceSettingServiceMocks.m; sourceTree = "<group>"; };
 		1A9989743EC69183E2F0C4E6 /* UserServiceProjectServiceMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceProjectServiceMocks.m; sourceTree = "<group>"; };
 		1A998B26C804715531F6FBFF /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		1A998BC52D218EDE40645540 /* Configurations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configurations.m; sourceTree = "<group>"; };
 		1A998BF1C63DB47522842329 /* SettingServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingServiceImpl.h; sourceTree = "<group>"; };
 		1A998C190F8AAA4F69CFAE41 /* ProjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectService.h; sourceTree = "<group>"; };
 		1A998C8F63A90BD4699D4AB4 /* ProjectServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectServiceImpl.h; sourceTree = "<group>"; };
@@ -403,6 +428,8 @@
 				192900D277A571217F9B6C2D /* Info.plist */,
 				19290758E9FF511A0210F30A /* Dependences.m */,
 				1929083DDA3CE1F27A099A24 /* Dependences.h */,
+				1A998BC52D218EDE40645540 /* Configurations.m */,
+				1A99803D80668F670F7930E0 /* Configurations.h */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -486,6 +513,7 @@
 				27FA870B202169FD00438F76 /* FUNI */,
 				27FA8724202169FE00438F76 /* FUNITests */,
 				27FA870A202169FD00438F76 /* Products */,
+				B547952A2026E154007BB248 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -522,6 +550,13 @@
 			path = FUNITests;
 			sourceTree = "<group>";
 		};
+		B547952A2026E154007BB248 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -532,6 +567,8 @@
 				27FA8705202169FD00438F76 /* Sources */,
 				27FA8706202169FD00438F76 /* Frameworks */,
 				27FA8707202169FD00438F76 /* Resources */,
+				B54795282026E14D007BB248 /* CopyFiles */,
+				B547952E2026E163007BB248 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -651,6 +688,7 @@
 				1A9986BB5BE5AD2B146BBF9F /* ProjectServiceImpl.m in Sources */,
 				1A998C0EE3A857F677A4A49F /* ProjectRepositoryImpl.m in Sources */,
 				1A998862F19205952E8B3185 /* UserServiceRepoMocks.m in Sources */,
+				1A998F80AA40A9498ADDE603 /* Configurations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +845,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TL9V27BMW8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FUNI/Frameworks",
+				);
 				INFOPLIST_FILE = FUNI/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.funi;
@@ -823,6 +865,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FUNI/Frameworks",
+				);
 				INFOPLIST_FILE = FUNI/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.funi;

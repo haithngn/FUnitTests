@@ -11,13 +11,14 @@
 @protocol UserApi;
 @protocol ProjectService;
 @protocol SettingService;
+@class Configurations;
 
 @interface UserServiceImpl : NSObject <UserService>
 
 - (instancetype)initWithUserRepository:(NSObject <UserRepository> *)repository
-                     sessionRepository:(NSObject <SessionRepository> *)sessionRepository
-                                   api:(NSObject <UserApi> *)api
+                     sessionRepository:(NSObject <SessionRepository> *)sessionRepository api:(NSObject <UserApi> *)api
                         settingService:(NSObject <SettingService> *)settingService
-                        projectService:(NSObject <ProjectService> *)projectService;
+                        projectService:(NSObject <ProjectService> *) projectService
+                        configurations:(Configurations *)configurations;
 
 @end

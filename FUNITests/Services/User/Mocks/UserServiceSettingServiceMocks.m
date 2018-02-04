@@ -5,12 +5,26 @@
 
 #import "UserServiceSettingServiceMocks.h"
 
+@interface UserServiceSettingServiceMocks ()
+
+@property (nonatomic, assign) BOOL createSetting;
+
+@end
 
 @implementation UserServiceSettingServiceMocks {
 
 }
-- (void)createSetting:(NSString *)userId {
 
+- (instancetype)init{
+    if (self = [super init]) {
+        _createSetting = NO;
+    }
+
+    return self;
+}
+
+- (void)createSetting:(NSString *)userId {
+    _createSetting = YES;
 }
 
 @end

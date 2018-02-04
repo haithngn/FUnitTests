@@ -12,6 +12,7 @@
 #import "SignInParams.h"
 #import "SettingService.h"
 #import "ProjectService.h"
+#import "Configurations.h"
 
 @interface UserServiceImpl ()
 
@@ -22,6 +23,7 @@
 @property (nonatomic, strong) NSObject <SettingService> * settingService;
 @property (nonatomic, strong) NSObject <ProjectService> * projectService;
 @property (nonatomic, strong) NSMutableArray <NSObject<UserServiceObservable>*> * observers;
+@property (nonatomic, strong) Configurations * configurations;
 
 @end
 
@@ -31,7 +33,8 @@
 - (instancetype)initWithUserRepository:(NSObject <UserRepository> *)repository
                      sessionRepository:(NSObject <SessionRepository> *)sessionRepository api:(NSObject <UserApi> *)api
                         settingService:(NSObject <SettingService> *)settingService
-                        projectService:(NSObject <ProjectService> *) projectService{
+                        projectService:(NSObject <ProjectService> *) projectService
+                        configurations:(Configurations *)configurations {
     if (self = [super init]) {
         self.repository = repository;
         self.sessionRepository = sessionRepository;
@@ -39,6 +42,7 @@
         self.api = api;
         self.settingService = settingService;
         self.projectService = projectService;
+        self.configurations = configurations;
     }
 
     return self;
@@ -60,7 +64,9 @@
 }
 
 - (void)login:(LoginParams *)params handler:(void (^)(NSError *error, User *user))handler {
-    SignInParams * signInParams = [[SignInParams alloc] initWithUsername:params.username password:params.password];
+    NSString * hashedPwd = [NSString stringWithFormat:@"%@_%@", params.password, _configurations.secret];
+    SignInParams * signInParams = [[SignInParams alloc] initWithUsername:params.username
+                                                                password:hashedPwd];
     __weak typeof(self) weakSelf = self;
     [_api signIn:signInParams handler:^(NSError *error, Credential *credential) {
         if (error == nil) {

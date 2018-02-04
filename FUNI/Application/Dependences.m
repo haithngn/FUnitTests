@@ -17,6 +17,7 @@
 #import "SettingRepositoryImpl.h"
 #import "ProjectRepositoryImpl.h"
 #import "ProjectServiceImpl.h"
+#import "Configurations.h"
 
 @interface Dependences ()
 
@@ -71,7 +72,8 @@
                                                      sessionRepository:self.internalSessionRepository
                                                                            api:self.internalUserApi
                                                                 settingService:self.internalSettingService
-                                                                projectService:self.internalProjectService];
+                                                                projectService:self.internalProjectService
+                                                                configurations:[Configurations instance]];
     }
 
     return _internalUserService;

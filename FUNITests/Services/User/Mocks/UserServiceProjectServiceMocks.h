@@ -8,4 +8,7 @@
 
 
 @interface UserServiceProjectServiceMocks : NSObject <ProjectService>
+
+@property (nonatomic, readonly) BOOL hasDefaultProj;
+
 @end

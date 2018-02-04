@@ -8,4 +8,8 @@
 
 
 @interface UserServiceApiMocks : NSObject <UserApi>
+
+@property (nonatomic, readonly) NSString * usr;
+@property (nonatomic, readonly) NSString * pwd;
+
 @end
