@@ -10,6 +10,8 @@
 #import "User.h"
 #import "UserApi.h"
 #import "SignInParams.h"
+#import "SettingService.h"
+#import "ProjectService.h"
 
 @interface UserServiceImpl ()
 
@@ -17,6 +19,8 @@
 @property (nonatomic, strong) NSObject<SessionRepository> * sessionRepository;
 @property (nonatomic, strong) NSObject<UserRepository> * repository;
 @property (nonatomic, strong) NSObject <UserApi> * api;
+@property (nonatomic, strong) NSObject <SettingService> * settingService;
+@property (nonatomic, strong) NSObject <ProjectService> * projectService;
 @property (nonatomic, strong) NSMutableArray <NSObject<UserServiceObservable>*> * observers;
 
 @end
@@ -25,12 +29,16 @@
 @synthesize user = _user;
 
 - (instancetype)initWithUserRepository:(NSObject <UserRepository> *)repository
-                     sessionRepository:(NSObject <SessionRepository> *)sessionRepository api:(NSObject <UserApi> *)api {
+                     sessionRepository:(NSObject <SessionRepository> *)sessionRepository api:(NSObject <UserApi> *)api
+                        settingService:(NSObject <SettingService> *)settingService
+                        projectService:(NSObject <ProjectService> *) projectService{
     if (self = [super init]) {
         self.repository = repository;
         self.sessionRepository = sessionRepository;
         self.observers = [NSMutableArray new];
         self.api = api;
+        self.settingService = settingService;
+        self.projectService = projectService;
     }
 
     return self;
@@ -57,6 +65,8 @@
     [_api signIn:signInParams handler:^(NSError *error, Credential *credential) {
         if (error == nil) {
             [weakSelf.sessionRepository setCurrentUserId:params.username];
+            [weakSelf.settingService createSetting:params.username];
+            [weakSelf.projectService createDefaultProjectsBelongTo:params.username];
             handler ? handler(nil, [[User alloc] initWithUsername: params.username]) : nil;
 
             [weakSelf broadcastUpdateCredential];

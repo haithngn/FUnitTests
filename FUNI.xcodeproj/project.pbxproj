@@ -31,6 +31,17 @@
 		19290E34D0AD2416AB96C21D /* UserRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290A50A358242F47901299 /* UserRepositoryImpl.m */; };
 		19290EBFB2137D940591FA3C /* BootstrapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290981B8DF3627232D2522 /* BootstrapViewModel.m */; };
 		19290F58CEECD8F87674EC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19290B34DD215F5F418D0044 /* Assets.xcassets */; };
+		1A9980481836F9B691EC0A34 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998088BE97DFF9E18EB515 /* Setting.m */; };
+		1A998199E8AD9CB83CE944C9 /* UserServiceApiMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998E514EE0C463013D5F90 /* UserServiceApiMocks.m */; };
+		1A9986792AD1A39796E84453 /* UserServiceSessionRepoMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998858C0778DDF2CDC23C9 /* UserServiceSessionRepoMocks.m */; };
+		1A9986BB5BE5AD2B146BBF9F /* ProjectServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998F077F3B6ECE17190D23 /* ProjectServiceImpl.m */; };
+		1A9987498E10EF5BD27DD0F8 /* SettingRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998290734082F062638097 /* SettingRepositoryImpl.m */; };
+		1A998862F19205952E8B3185 /* UserServiceRepoMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998467ED912E27E8330EDC /* UserServiceRepoMocks.m */; };
+		1A998C0EE3A857F677A4A49F /* ProjectRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998497DA52C99DF4DE1781 /* ProjectRepositoryImpl.m */; };
+		1A998C2AE7A7F3D4B8D7F223 /* UserServiceSettingServiceMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9988A949AA9710DB3D0F75 /* UserServiceSettingServiceMocks.m */; };
+		1A998C2E09B8EF896C1A8DC4 /* UserServiceProjectServiceMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9989743EC69183E2F0C4E6 /* UserServiceProjectServiceMocks.m */; };
+		1A998DA4B41CC3D96030C961 /* SettingServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998EBCA443AB4720EB1204 /* SettingServiceImpl.m */; };
+		1A998E527A2424D34229785B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998371F98F17FBCD9B52C4 /* Project.m */; };
 		27FA8726202169FE00438F76 /* FUNITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA8725202169FE00438F76 /* FUNITests.m */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +106,32 @@
 		19290E44EC29A871756ED4DC /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290E9D36C579314CDF28F9 /* LoginParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParams.m; sourceTree = "<group>"; };
 		19290EE3750D02D21B91CE9C /* UserRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepositoryImpl.h; sourceTree = "<group>"; };
+		1A998088BE97DFF9E18EB515 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		1A9980A8FAAE21B7A077E243 /* SettingRespository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingRespository.h; sourceTree = "<group>"; };
+		1A9981068A82C041C405B586 /* UserServiceRepoMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceRepoMocks.h; sourceTree = "<group>"; };
+		1A99811DCD460C2E19C20BFA /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		1A99813164EFD805205410D6 /* SettingRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingRepositoryImpl.h; sourceTree = "<group>"; };
+		1A9981CB5FA039E25FB3CC0B /* UserServiceSettingServiceMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceSettingServiceMocks.h; sourceTree = "<group>"; };
+		1A998290734082F062638097 /* SettingRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingRepositoryImpl.m; sourceTree = "<group>"; };
+		1A998371F98F17FBCD9B52C4 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		1A998467ED912E27E8330EDC /* UserServiceRepoMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceRepoMocks.m; sourceTree = "<group>"; };
+		1A998497DA52C99DF4DE1781 /* ProjectRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectRepositoryImpl.m; sourceTree = "<group>"; };
+		1A9984D97CD08DC5B7F5280D /* UserServiceProjectServiceMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceProjectServiceMocks.h; sourceTree = "<group>"; };
+		1A9984DEA56DDE206E057314 /* UserServiceSessionRepoMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceSessionRepoMocks.h; sourceTree = "<group>"; };
+		1A9986231A7245565E10E820 /* ProjectRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectRepository.h; sourceTree = "<group>"; };
+		1A99875AECD22E572049A1EA /* UserServiceApiMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceApiMocks.h; sourceTree = "<group>"; };
+		1A998858C0778DDF2CDC23C9 /* UserServiceSessionRepoMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceSessionRepoMocks.m; sourceTree = "<group>"; };
+		1A9988A949AA9710DB3D0F75 /* UserServiceSettingServiceMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceSettingServiceMocks.m; sourceTree = "<group>"; };
+		1A9989743EC69183E2F0C4E6 /* UserServiceProjectServiceMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceProjectServiceMocks.m; sourceTree = "<group>"; };
+		1A998B26C804715531F6FBFF /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		1A998BF1C63DB47522842329 /* SettingServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingServiceImpl.h; sourceTree = "<group>"; };
+		1A998C190F8AAA4F69CFAE41 /* ProjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectService.h; sourceTree = "<group>"; };
+		1A998C8F63A90BD4699D4AB4 /* ProjectServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectServiceImpl.h; sourceTree = "<group>"; };
+		1A998CDD7EBB708EFEEE36ED /* ProjectRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectRepositoryImpl.h; sourceTree = "<group>"; };
+		1A998E514EE0C463013D5F90 /* UserServiceApiMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceApiMocks.m; sourceTree = "<group>"; };
+		1A998EBCA443AB4720EB1204 /* SettingServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingServiceImpl.m; sourceTree = "<group>"; };
+		1A998EFFD0E357655514004E /* SettingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingService.h; sourceTree = "<group>"; };
+		1A998F077F3B6ECE17190D23 /* ProjectServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectServiceImpl.m; sourceTree = "<group>"; };
 		27FA8709202169FD00438F76 /* FUNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FUNI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FA8721202169FE00438F76 /* FUNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FUNITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FA8725202169FE00438F76 /* FUNITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUNITests.m; sourceTree = "<group>"; };
@@ -124,6 +161,10 @@
 			children = (
 				1929016F88BEF6179BAC33BD /* UserServiceImpl.m */,
 				1929091B646424DFC19284EA /* UserServiceImpl.h */,
+				1A998EBCA443AB4720EB1204 /* SettingServiceImpl.m */,
+				1A998BF1C63DB47522842329 /* SettingServiceImpl.h */,
+				1A998F077F3B6ECE17190D23 /* ProjectServiceImpl.m */,
+				1A998C8F63A90BD4699D4AB4 /* ProjectServiceImpl.h */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -177,6 +218,10 @@
 			children = (
 				192908F4CBD42AFF2349D976 /* User.m */,
 				192908741C11321B4E77E46F /* User.h */,
+				1A998371F98F17FBCD9B52C4 /* Project.m */,
+				1A99811DCD460C2E19C20BFA /* Project.h */,
+				1A998088BE97DFF9E18EB515 /* Setting.m */,
+				1A998B26C804715531F6FBFF /* Setting.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,6 +279,10 @@
 				19290EE3750D02D21B91CE9C /* UserRepositoryImpl.h */,
 				192902F502152FF7BFCA6745 /* SessionRepositoryImpl.m */,
 				192907DAA7EA87439ED347A4 /* SessionRepositoryImpl.h */,
+				1A998290734082F062638097 /* SettingRepositoryImpl.m */,
+				1A99813164EFD805205410D6 /* SettingRepositoryImpl.h */,
+				1A998497DA52C99DF4DE1781 /* ProjectRepositoryImpl.m */,
+				1A998CDD7EBB708EFEEE36ED /* ProjectRepositoryImpl.h */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -262,6 +311,8 @@
 			children = (
 				192902B88313D4C31A5695F2 /* UserRepository.h */,
 				19290736411AB25779E63FCA /* SessionRepository.h */,
+				1A9980A8FAAE21B7A077E243 /* SettingRespository.h */,
+				1A9986231A7245565E10E820 /* ProjectRepository.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -315,6 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				19290551304FFD27ACBB81A8 /* UserService.h */,
+				1A998EFFD0E357655514004E /* SettingService.h */,
+				1A998C190F8AAA4F69CFAE41 /* ProjectService.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -326,13 +379,6 @@
 				192901D07A92C1906912CD9D /* ViewModels */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		19290AD9AF58DAF10ACADF8B /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 		19290AFDA204700D1E54D433 /* Parameters */ = {
@@ -411,10 +457,27 @@
 		19290FF8B7C782DA8CCE1C6B /* User */ = {
 			isa = PBXGroup;
 			children = (
-				19290AD9AF58DAF10ACADF8B /* Mocks */,
 				192901139D5E92A036729EF6 /* Tests */,
+				1A998F8876A70268B6766EF6 /* Mocks */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		1A998F8876A70268B6766EF6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1A998467ED912E27E8330EDC /* UserServiceRepoMocks.m */,
+				1A9981068A82C041C405B586 /* UserServiceRepoMocks.h */,
+				1A998858C0778DDF2CDC23C9 /* UserServiceSessionRepoMocks.m */,
+				1A9984DEA56DDE206E057314 /* UserServiceSessionRepoMocks.h */,
+				1A998E514EE0C463013D5F90 /* UserServiceApiMocks.m */,
+				1A99875AECD22E572049A1EA /* UserServiceApiMocks.h */,
+				1A9988A949AA9710DB3D0F75 /* UserServiceSettingServiceMocks.m */,
+				1A9981CB5FA039E25FB3CC0B /* UserServiceSettingServiceMocks.h */,
+				1A9989743EC69183E2F0C4E6 /* UserServiceProjectServiceMocks.m */,
+				1A9984D97CD08DC5B7F5280D /* UserServiceProjectServiceMocks.h */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		27FA8700202169FD00438F76 = {
@@ -581,6 +644,13 @@
 				19290B12559F74A9BCC5F977 /* SignInParams.m in Sources */,
 				1929062B7F44ACE886323615 /* Credential.m in Sources */,
 				192908BE181F45A638A19B8F /* UserApiImpl.m in Sources */,
+				1A998E527A2424D34229785B /* Project.m in Sources */,
+				1A9980481836F9B691EC0A34 /* Setting.m in Sources */,
+				1A998DA4B41CC3D96030C961 /* SettingServiceImpl.m in Sources */,
+				1A9987498E10EF5BD27DD0F8 /* SettingRepositoryImpl.m in Sources */,
+				1A9986BB5BE5AD2B146BBF9F /* ProjectServiceImpl.m in Sources */,
+				1A998C0EE3A857F677A4A49F /* ProjectRepositoryImpl.m in Sources */,
+				1A998862F19205952E8B3185 /* UserServiceRepoMocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +660,10 @@
 			files = (
 				27FA8726202169FE00438F76 /* FUNITests.m in Sources */,
 				1929043766ADFFE7D956DF35 /* UserServiceTests.m in Sources */,
+				1A9986792AD1A39796E84453 /* UserServiceSessionRepoMocks.m in Sources */,
+				1A998199E8AD9CB83CE944C9 /* UserServiceApiMocks.m in Sources */,
+				1A998C2AE7A7F3D4B8D7F223 /* UserServiceSettingServiceMocks.m in Sources */,
+				1A998C2E09B8EF896C1A8DC4 /* UserServiceProjectServiceMocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

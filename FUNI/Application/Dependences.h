@@ -6,9 +6,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol UserService;
+@protocol SettingService;
+@protocol ProjectService;
 
 @interface Dependences : NSObject
 
 + (NSObject<UserService> *)userService;
++ (NSObject<SettingService> *)settingService;
++ (NSObject<ProjectService> *)projectService;
 
 @end
