@@ -58,8 +58,7 @@
 
     //Then
     NSString * hashPwd = [NSString stringWithFormat:@"%@_%@", pwd, [Configurations instance].secret];
-    NSLog(@"%@", hashPwd);
-    NSLog(@"%@", _apiMocks.pwd);
+    
     XCTAssertTrue([usr isEqualToString:_apiMocks.usr], @"Dung co doi user name");
     XCTAssertTrue([hashPwd isEqualToString:_apiMocks.pwd], @"Hash sai password roi em");
 }

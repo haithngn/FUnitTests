@@ -25,7 +25,6 @@
 		19290C0F16C5AA5B82442B83 /* SessionRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192902F502152FF7BFCA6745 /* SessionRepositoryImpl.m */; };
 		19290C5B589470F735D51831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1929047EEC65423B2EF28E19 /* Main.storyboard */; };
 		19290C84011BA2AC8AB86E2B /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929048A7779DD5500C84C1B /* AuthorizeViewModel.m */; };
-		19290CB944F4596CE8A9C9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290F0E6AD6F8FB257B04AC /* LaunchScreen.storyboard */; };
 		19290D1AD7F55875FB2DD1AB /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290758E9FF511A0210F30A /* Dependences.m */; };
 		19290E1CA1A44557449A60C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908FCCBDC0782A3A7D8CC /* AppDelegate.m */; };
 		19290E34D0AD2416AB96C21D /* UserRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290A50A358242F47901299 /* UserRepositoryImpl.m */; };
@@ -49,6 +48,8 @@
 		1A998E527A2424D34229785B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998371F98F17FBCD9B52C4 /* Project.m */; };
 		1A998F80AA40A9498ADDE603 /* Configurations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998BC52D218EDE40645540 /* Configurations.m */; };
 		27FA8726202169FE00438F76 /* FUNITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA8725202169FE00438F76 /* FUNITests.m */; };
+		6709D3B2202812E200CD3D62 /* LoginUsrServiceMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6709D3B1202812E200CD3D62 /* LoginUsrServiceMocks.m */; };
+		6709D3B72028141100CD3D62 /* AuthorizeViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6709D3B62028141100CD3D62 /* AuthorizeViewModelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +105,6 @@
 		192903F30E0BC0BD1672AD14 /* UserServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceTests.m; sourceTree = "<group>"; };
 		192903F5B1B2967BA64EDE7F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		19290412A16973FFF7843A83 /* Credential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credential.m; sourceTree = "<group>"; };
-		19290485A416558C53F373FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FUNI/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		1929048A7779DD5500C84C1B /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
 		19290551304FFD27ACBB81A8 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		192906CA43F9EB600798DABE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -177,6 +177,10 @@
 		27FA8721202169FE00438F76 /* FUNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FUNITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FA8725202169FE00438F76 /* FUNITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUNITests.m; sourceTree = "<group>"; };
 		27FA8727202169FE00438F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6709D3B0202812E200CD3D62 /* LoginUsrServiceMocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUsrServiceMocks.h; sourceTree = "<group>"; };
+		6709D3B1202812E200CD3D62 /* LoginUsrServiceMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUsrServiceMocks.m; sourceTree = "<group>"; };
+		6709D3B62028141100CD3D62 /* AuthorizeViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModelTests.m; sourceTree = "<group>"; };
+		6709D3B82028142300CD3D62 /* AuthorizeViewModelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewModelTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,7 +496,6 @@
 		19290FE34392D575108BDE2A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				19290F0E6AD6F8FB257B04AC /* LaunchScreen.storyboard */,
 				1929047EEC65423B2EF28E19 /* Main.storyboard */,
 				19290070103D38C43C985EEA /* Storyboards.m */,
 				192901B037CCBB56FD9AD371 /* Storyboards.h */,
@@ -548,6 +551,7 @@
 		1A99892B205A61904DB52243 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				6709D3AE202811F800CD3D62 /* UIModels */,
 				1A998E0662AD751C7AF4C1DA /* Mocks */,
 				1A9982B934FF3A07265C1C97 /* Tests */,
 			);
@@ -639,6 +643,33 @@
 				1A99892B205A61904DB52243 /* Repositories */,
 			);
 			path = FUNITests;
+			sourceTree = "<group>";
+		};
+		6709D3AE202811F800CD3D62 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				6709D3B3202813BA00CD3D62 /* Tests */,
+				6709D3AF2028129E00CD3D62 /* Mocks */,
+			);
+			name = UIModels;
+			sourceTree = "<group>";
+		};
+		6709D3AF2028129E00CD3D62 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6709D3B0202812E200CD3D62 /* LoginUsrServiceMocks.h */,
+				6709D3B1202812E200CD3D62 /* LoginUsrServiceMocks.m */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		6709D3B3202813BA00CD3D62 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6709D3B62028141100CD3D62 /* AuthorizeViewModelTests.m */,
+				6709D3B82028142300CD3D62 /* AuthorizeViewModelTests.h */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		B547952A2026E154007BB248 /* Frameworks */ = {
@@ -733,7 +764,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19290F58CEECD8F87674EC72 /* Assets.xcassets in Resources */,
-				19290CB944F4596CE8A9C9D0 /* LaunchScreen.storyboard in Resources */,
 				19290C5B589470F735D51831 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,12 +822,14 @@
 			files = (
 				27FA8726202169FE00438F76 /* FUNITests.m in Sources */,
 				1929043766ADFFE7D956DF35 /* UserServiceTests.m in Sources */,
+				6709D3B72028141100CD3D62 /* AuthorizeViewModelTests.m in Sources */,
 				1A9986792AD1A39796E84453 /* UserServiceSessionRepoMocks.m in Sources */,
 				1A998199E8AD9CB83CE944C9 /* UserServiceApiMocks.m in Sources */,
 				1A998C2AE7A7F3D4B8D7F223 /* UserServiceSettingServiceMocks.m in Sources */,
 				1A998C2E09B8EF896C1A8DC4 /* UserServiceProjectServiceMocks.m in Sources */,
 				1A99849FCF1F7DB82093B196 /* ProjectRepositoryTests.m in Sources */,
 				1A998127CA27CA908C2A18EC /* DBProjectRepoMocks.m in Sources */,
+				6709D3B2202812E200CD3D62 /* LoginUsrServiceMocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,14 +850,6 @@
 				192900C00245605B43920756 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		19290F0E6AD6F8FB257B04AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19290485A416558C53F373FE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -879,7 +903,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -928,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

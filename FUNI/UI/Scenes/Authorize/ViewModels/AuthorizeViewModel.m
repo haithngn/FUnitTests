@@ -34,11 +34,6 @@
 
 - (void)login {
     LoginParams * params = [[LoginParams alloc] initWithUsername:_usr password:_pwd];
-    [_userService login:params handler:^(NSError *error, User *user) {
-        if (error != nil) {
-            //TODO: Bind Error to the View
-        }
-    }];
 }
 
 - (void)setUsername:(NSString *)username {
