@@ -34,7 +34,7 @@
     
     //Then
     
-    XCTAssertFalse(_userServiceMocks.callLogin, @"Chua call login...");
+    XCTAssertTrue(_userServiceMocks.callLogin, @"Chua call login...");
 }
 
 - (void)tearDown {

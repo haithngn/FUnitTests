@@ -34,6 +34,7 @@
 
 - (void)login {
     LoginParams * params = [[LoginParams alloc] initWithUsername:_usr password:_pwd];
+    [_userService login:params handler:nil];
 }
 
 - (void)setUsername:(NSString *)username {

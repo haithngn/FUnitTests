@@ -90,7 +90,7 @@
     //When
     [_userService login:params handler:nil];
 
-    XCTAssertFalse(_settingServiceMocks.createSetting, @"You must create setting after sign in");
+    XCTAssertTrue(_settingServiceMocks.createSetting, @"You must create setting after sign in");
 }
 
 - (void)testCreateDefaultProject {

@@ -71,7 +71,7 @@
     [_api signIn:signInParams handler:^(NSError *error, Credential *credential) {
         if (error == nil) {
             [weakSelf.sessionRepository setCurrentUserId:params.username];
-            //[weakSelf.settingService createSetting:params.username];
+            [weakSelf.settingService createSetting:params.username];
             [weakSelf.projectService createDefaultProjectsBelongTo:params.username];
             handler ? handler(nil, [[User alloc] initWithUsername: params.username]) : nil;
 
