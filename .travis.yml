@@ -6,7 +6,9 @@ xcode_scheme: FUNITests
 
 deploy:
   provider: script
-  script: bash test.sh
+  script: bash tests.sh
+  on:
+    branch: develop
 
 branches:
   only:
