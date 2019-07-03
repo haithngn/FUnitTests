@@ -1,8 +1,11 @@
 language: objective-c
 osx_image: xcode9.4
 xcode_project: FUNI.xcodeproj
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
 xcode_scheme: FUNITests
+
+before_install:
+  - gem install xcpretty
 
 deploy:
   provider: script
