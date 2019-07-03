@@ -6,3 +6,10 @@ xcode_scheme: FUNITests
 branches:
   only:
   - develop
+
+notifications:
+  email:
+    recipients:
+      - hai@flomail.net
+    on_success: never
+    on_failure: always
