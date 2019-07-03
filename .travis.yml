@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9.4
 xcode_project: FUNI.xcodeproj
 xcode_destination: platform=iOS Simulator,OS=11.4,name=iPad Pro (9.7-inch)
-xcode_scheme: FUNI
+xcode_scheme: FUNITests
 branches:
   only:
   - develop
