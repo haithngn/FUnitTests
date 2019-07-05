@@ -29,7 +29,7 @@
 - (void)createDefaultProjectsBelongTo:(NSString *)username {
     NSMutableArray <CreateProjectParams*> * params = [NSMutableArray new];
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 1; ++i) {
         NSString * projId = [NSString stringWithFormat:@"%@_%d", username, i];
         [params addObject:[[CreateProjectParams alloc] initWithId:projId andName:projId]];
     }
